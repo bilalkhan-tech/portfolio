@@ -90,3 +90,49 @@ export const Container = styled.section`
     }
   }
 `
+
+
+
+
+
+// ShowMore.styles.ts or similar
+
+
+export const ShowMoreWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+`;
+
+export const ShowMoreButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #23ce6b;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(35, 206, 107, 0.3);
+
+  &:hover {
+    background-color: #1ea95d;
+    box-shadow: 0 6px 14px rgba(35, 206, 107, 0.4);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+    stroke: white;
+  }
+
+  &.rotated svg {
+    transform: rotate(180deg);
+  }
+`;
+
