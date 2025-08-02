@@ -10,7 +10,7 @@ const allProjects = [
     title: "Carvonix Mobile app",
     description: `CARVONIX is the ultimate automotive enthusiast social platform...`,
     tech: ["Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://ai-chatbot-t8fn.onrender.com",
+    link: "https://play.google.com/store/apps/details?id=com.carvonixllc.carvonixUserApp&hl=en",
   },
   {
     title: "Chatter Social",
@@ -111,24 +111,22 @@ const Project = () => {
       </div>
 
       <ShowMoreWrapper>
-        <ShowMoreWrapper>
-          <ShowMoreButton
-            className={showAll ? "rotated" : ""}
-            onClick={() => setShowAll(!showAll)}
+        <ShowMoreButton
+          className={showAll ? "rotated" : ""}
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? "Show Less" : "Show More"}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            {showAll ? "Show Less" : "Show More"}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </ShowMoreButton>
-        </ShowMoreWrapper>
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </ShowMoreButton>
       </ShowMoreWrapper>
     </Container>
   );
