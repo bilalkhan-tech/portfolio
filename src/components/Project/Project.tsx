@@ -5,6 +5,7 @@ import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useState } from "react";
 
+
 const allProjects = [
   {
     title: "Carvonix Mobile app",
