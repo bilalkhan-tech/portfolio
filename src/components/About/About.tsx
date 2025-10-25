@@ -112,13 +112,13 @@ export function About() {
           </div>
         </ScrollAnimation>
         <br />
-        <ScrollAnimation animateIn="fadeInLeft" delay={550}>
+        {/* <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
             <h4>Junior React Native Developer</h4>
             <p>Digital Sensei Technology </p>
             <p>Lahore, Pakistan</p>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <br />
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000}>
