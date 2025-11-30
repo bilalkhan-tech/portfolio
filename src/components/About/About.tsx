@@ -81,7 +81,7 @@ export function About() {
           <div className="experience">
             <h2>Experience:</h2>
             <br />
-            <h4>Senior React Native Developer</h4>
+            <h4>React Native Developer</h4>
             <p>Global Software Consultancy - Present</p>
             <p>Lahore, Pakistan</p>
           </div>
@@ -89,7 +89,7 @@ export function About() {
         <br />
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
-            <h4>Senior React Native Developer / Team Lead</h4>
+            <h4>React Native Developer</h4>
             <p>TheWebieStorms </p>
             <p>Lahore, Pakistan</p>
           </div>
@@ -98,7 +98,7 @@ export function About() {
 
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
-            <h4>Mid-level React Native Developer</h4>
+            <h4>React Native Developer</h4>
             <p>OutsourceNZ </p>
             <p>Lahore, Pakistan</p>
           </div>
