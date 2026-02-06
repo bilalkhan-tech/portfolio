@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import MyPhoto from "../../assets/WhatsApp.png";
-import MyPhotoBG from "../../assets/WhatsApp_Image.png";
+import MyPhotoBG from "../../assets/BilalQureshi.png";
 import python from "../../assets/python.svg";
 import java from "../../assets/java.svg";
 import wordpress from "../../assets/wordpress.svg";
@@ -77,7 +77,7 @@ export function About() {
           </div>
         </ScrollAnimation>
         <br />
-        <ScrollAnimation animateIn="fadeInLeft" delay={550}>
+        {/* <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
             <h2>Experience:</h2>
             <br />
@@ -85,7 +85,7 @@ export function About() {
             <p>Global Software Consultancy - Present</p>
             <p>Lahore, Pakistan</p>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <br />
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">

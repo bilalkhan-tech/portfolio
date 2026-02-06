@@ -91,8 +91,6 @@
 //   );
 // }
 
-
-
 import { useEffect, useState } from "react";
 import { Container, ContainerSucces } from "./styles";
 import { useForm, ValidationError } from "@formspree/react";
@@ -173,12 +171,12 @@ export function Form() {
           field="message"
           errors={state.errors}
         />
-        <ReCAPTCHAComponent
+        {/* <ReCAPTCHAComponent
           sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
           onChange={(e: any) => {
             setIsHuman(true);
           }}
-        />
+        /> */}
         <button
           type="submit"
           disabled={state.submitting || !validEmail || !message || !isHuman}

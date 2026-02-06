@@ -13,7 +13,7 @@ export function Hero() {
   const message = "Hello, I found your contact through your portfolio site.";
   const encodedMessage = encodeURIComponent(message);
   const link = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(
-    phone
+    phone,
   )}&text=${encodedMessage}`;
 
   return (
@@ -31,7 +31,7 @@ export function Hero() {
           <h3>Software Engineer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">2+ Year Experience</p>
+          <p className="small-resume">3+ Year Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
