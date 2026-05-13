@@ -1,74 +1,138 @@
 import { Container, ShowMoreWrapper, ShowMoreButton } from "./styles";
 import githubIcon from "../../assets/github.svg";
-// import DownloadApp from '../../assets/download.webp'
 import externalLink from "../../assets/external-link.svg";
+
+import android from "../../assets/android-_cleaned.svg";
+import appleIcon from "../../assets/apple-_cleaned.svg";
+
 import ScrollAnimation from "react-animate-on-scroll";
 import { useState } from "react";
 
 const allProjects = [
   {
     title: "Carvonix Mobile app",
-    description: `CARVONIX is the ultimate automotive enthusiast social platform...`,
+    description:
+      "CARVONIX is the ultimate automotive enthusiast social platform...",
     tech: ["Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://play.google.com/store/apps/details?id=com.carvonixllc.carvonixUserApp&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=com.carvonixllc.carvonixUserApp&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.carvonixllc.carvonixUserApp&hl=en",
+    iosLink: "https://apps.apple.com/pk/app/carvonix/id1661267102",
+  },
+
+  {
+    title: "Clemata – Cleaning Management Mobile App",
+    description:
+      "The app enables employees to register work hours, manage cleaning tasks, communicate with inspectors through a message center...",
+    tech: ["Typescript", "Stripe Payment", "Firebase"],
+    // link: "https://play.google.com/store/apps/details?id=com.clemata.employee&pcampaignid=web_share",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.clemata.employee&pcampaignid=web_share",
+    iosLink: "https://apps.apple.com/pk/app/clemata/id1532074749",
+  },
+  {
+    title: "SMP.Direct Mobile App",
+    description:
+      "The app enables employees to register work hours, manage cleaning tasks, communicate with inspectors through a message center, share image/documentation files, receive employment contracts, and track daily assignments....",
+    tech: ["Typescript", "Stripe Payment", "Firebase"],
+    // link: "https://play.google.com/store/apps/details?id=io.chattersocial.app&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.smpdirect.kundeuser&pcampaignid=web_share",
+    iosLink: "https://apps.apple.com/pk/app/smp-direct/id6475754189",
   },
   {
     title: "Chatter Social",
-    description: `Group-first social network for real-time conversations...`,
+    description: "Group-first social network for real-time conversations...",
     tech: ["Typescript", "Stripe Payment", "Firebase"],
-    link: "https://play.google.com/store/apps/details?id=io.chattersocial.app&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=io.chattersocial.app&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=io.chattersocial.app&hl=en",
+    iosLink: "https://apps.apple.com/pk/app/chatter-social/id6470361217",
   },
+
   {
     title: "iSQROLL",
-    description: `iSQROLL, a marketplace designed for Kiwi's, by Kiwis...`,
+    description: "iSQROLL, a marketplace designed for Kiwi's, by Kiwis...",
     tech: ["Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://play.google.com/store/apps/details?id=com.isqroll&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=com.isqroll&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.isqroll&hl=en",
+    iosLink: "#",
   },
+
   {
     title: "Mish - Carpooling",
-    description: `Mish is Aotearoa New Zealand’s latest community-based travel network...`,
+    description:
+      "Mish is Aotearoa New Zealand’s latest community-based travel network...",
     tech: ["Typescript", "Firebase", "Redux-Toolkit", "Stripe Payments"],
     link: "https://play.google.com/store/apps/details?id=com.mish&hl=en",
+    androidLink: "https://play.google.com/store/apps/details?id=com.mish&hl=en",
+    iosLink: "https://apps.apple.com/pk/app/mish-carpooling/id1661264457",
   },
+
   {
     title: "SafeSigNZ",
-    description: `Safety starts with understanding how developers collect and share your data...`,
+    description:
+      "Safety starts with understanding how developers collect and share your data...",
     tech: ["Typescript", "Firebase", "Redux-Toolkit"],
     link: "https://play.google.com/store/apps/details?id=com.safesignz&hl=en_US",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.safesignz&hl=en_US",
+    iosLink: "https://apps.apple.com/pk/app/safesignz/id6446236002",
   },
+
   {
     title: "Ponataki",
-    description: `The language of Niue is an integral part to the preservation...`,
+    description:
+      "The language of Niue is an integral part to the preservation...",
     tech: ["Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://play.google.com/store/apps/details?id=com.vagahauniue&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=com.vagahauniue&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.vagahauniue&hl=en",
+    iosLink: "https://apps.apple.com/pk/app/ponataki/id1671955178",
   },
+
   {
     title: "LocumBridge",
-    description: `Locumbridge: Your All-in-One Healthcare Staffing Solution...`,
+    description: "Locumbridge: Your All-in-One Healthcare Staffing Solution...",
     tech: ["React Native", "Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://play.google.com/store/apps/details?id=com.locum_bridge&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=com.locum_bridge&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.locum_bridge&hl=en",
+    iosLink: "https://apps.apple.com/pk/app/locumbridge/id6461689669",
   },
+
   {
     title: "Saloof",
-    description: `Saloof is a pioneering B2B e-commerce platform...`,
+    description: "Saloof is a pioneering B2B e-commerce platform...",
     tech: ["React Native", "Typescript", "Firebase", "Redux-Toolkit"],
     link: "https://play.google.com/store/apps/details?id=com.outsourcenz.saloof&hl=ens",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.outsourcenz.saloof&hl=ens",
+    iosLink: "https://apps.apple.com/pk/app/saloof/id6477905170",
   },
+
   {
     title: "SafetyCheck",
-    description: `At SafetyCheck, we believe that an excellent health and safety system...`,
+    description:
+      "At SafetyCheck, we believe that an excellent health and safety system...",
     tech: ["React Native", "Typescript", "Firebase", "Redux-Toolkit"],
-    link: "https://play.google.com/store/apps/details?id=com.outsourcenz.safetycheck&hl=en",
+    // link: "https://play.google.com/store/apps/details?id=com.outsourcenz.safetycheck&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.outsourcenz.safetycheck&hl=en",
+    iosLink: "#",
   },
 ];
 
 const Project = () => {
   const [showAll, setShowAll] = useState(false);
+
   const visibleProjects = showAll ? allProjects : allProjects.slice(0, 3);
 
   return (
     <Container id="project">
       <h2>My Projects</h2>
+
       <div className="projects">
         {visibleProjects.map((project, index) => (
           <ScrollAnimation animateIn="flipInX" key={index}>
@@ -86,18 +150,49 @@ const Project = () => {
                   strokeLinejoin="round"
                 >
                   <title>Folder</title>
+
                   <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
                 </svg>
+
                 <div className="project-links">
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    <img src={externalLink} alt="Visit site" />
+                  {/* Android Icon */}
+                  <a
+                    href={project.androidLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="store-icon"
+                  >
+                    <img src={android} alt="Android App" />
                   </a>
+
+                  {/* iOS Icon */}
+                  <a
+                    href={project.iosLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="store-icon"
+                  >
+                    <img src={appleIcon} alt="iOS App" />
+                  </a>
+
+                  {/* External Link */}
+                  {/* <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="store-icon"
+                  >
+                    <img src={externalLink} alt="Visit site" />
+                  </a> */}
                 </div>
               </header>
+
               <div className="body">
                 <h3>{project.title}</h3>
+
                 <p>{project.description}</p>
               </div>
+
               <footer>
                 <ul className="tech-list">
                   {project.tech.map((tech, techIdx) => (
@@ -116,6 +211,7 @@ const Project = () => {
           onClick={() => setShowAll(!showAll)}
         >
           {showAll ? "Show Less" : "Show More"}
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
-
 export const Container = styled.section`
   margin-top: 15rem;
-  
-  h2{
+
+  h2 {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 3rem;
   }
-  .projects{
+
+  .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -17,7 +17,7 @@ export const Container = styled.section`
     padding: 1rem;
     overflow: hidden;
 
-    .project{
+    .project {
       padding: 2rem 1.8rem;
       background-color: #2b2b2b;
       border-radius: 1.2rem;
@@ -25,48 +25,61 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       height: 100%;
-      color: #FFF;
-      &:hover{
+      color: #fff;
+
+      &:hover {
         transform: translateY(-5px);
         background-color: var(--pink);
       }
 
-      header{
+      header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: var(--blue);
         margin-bottom: 3.6rem;
-        .project-links{
+
+        .project-links {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          gap: 1.2rem;
         }
+
         a > img {
-          width: 5.0rem;
+          width: 2.4rem;
+          height: 2.4rem;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+        }
+
+        a > img:hover {
+          transform: scale(1.15);
         }
       }
-      
-      h3{
+
+      h3 {
         margin-bottom: 2rem;
       }
 
-      p{
+      p {
         letter-spacing: 0.12rem;
         margin-bottom: 2rem;
-        a{
-          color: #FFFF;
+
+        a {
+          color: #fff;
           border-bottom: 1px solid var(--green);
           transition: color 0.25s;
-          &:hover{
+
+          &:hover {
             color: var(--green);
           }
         }
       }
 
-      footer{
+      footer {
         margin-top: auto;
-        .tech-list{
+
+        .tech-list {
           display: flex;
           align-items: center;
           gap: 2rem;
@@ -74,29 +87,21 @@ export const Container = styled.section`
           opacity: 0.6;
         }
       }
-
     }
   }
 
-  @media (max-width: 960px){
-    .projects{
+  @media (max-width: 960px) {
+    .projects {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  @media (max-width: 740px){
-    .projects{
+  @media (max-width: 740px) {
+    .projects {
       grid-template-columns: 1fr;
     }
   }
-`
-
-
-
-
-
-// ShowMore.styles.ts or similar
-
+`;
 
 export const ShowMoreWrapper = styled.div`
   display: flex;
@@ -135,4 +140,3 @@ export const ShowMoreButton = styled.button`
     transform: rotate(180deg);
   }
 `;
-
