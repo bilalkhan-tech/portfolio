@@ -41,6 +41,16 @@ const allProjects = [
     iosLink: "https://apps.apple.com/pk/app/smp-direct/id6475754189",
   },
   {
+    title: "Leverendor Task Management",
+    description:
+      "Leverendor APP is a workforce task management application designed for SMP suppliers and service providers.The app allows authorized users to:• View assigned cleaning and maintenance tasks• Record working hours and task progress....",
+    tech: ["Typescript", "Stripe Payment", "Firebase"],
+    // link: "https://play.google.com/store/apps/details?id=io.chattersocial.app&hl=en",
+    androidLink:
+      "https://play.google.com/store/apps/details?id=com.clemata.leverendor&pcampaignid=web_share",
+    iosLink: "https://apps.apple.com/pk/app/leverand%C3%B8r-app/id6768252823",
+  },
+  {
     title: "Chatter Social",
     description: "Group-first social network for real-time conversations...",
     tech: ["Typescript", "Stripe Payment", "Firebase"],
