@@ -188,13 +188,13 @@ export function About() {
         </div>
       </div>
       <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
+        {/* <ScrollAnimation animateIn="fadeInRight" delay={0.21 * 1000}>
           <img
             src={MyPhotoBG}
             alt="Muhammad Bilal"
             style={{ borderRadius: 50 }}
           />
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
     </Container>
   );
