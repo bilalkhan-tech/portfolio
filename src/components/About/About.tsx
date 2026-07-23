@@ -2,6 +2,7 @@ import { Container } from "./styles";
 import MyPhoto from "../../assets/WhatsApp.png";
 import MyPhotoBG from "../../assets/BilalQureshi.png";
 import python from "../../assets/python.svg";
+import expo from "../../assets/svgviewer-output.svg";
 import java from "../../assets/java.svg";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
@@ -28,10 +29,11 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Muhmmad Bilal, a skilled React Native developer. With
-            my extensive experience in delivering successful projects, I bring a
-            unique blend of technical expertise and business acumen to every
-            endeavor.
+            Hi, I'm Muhammad Bilal, a React Native & Full Stack Developer with
+            4+ years of experience building high-quality mobile and web
+            applications. I specialize in React Native, React.js, Node.js,
+            Firebase, and REST APIs, delivering scalable, high-performance
+            solutions for startups and businesses.
           </p>
         </ScrollAnimation>
         <ScrollAnimation
@@ -40,14 +42,15 @@ export function About() {
           style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
           <p>
-            As a React Native developer, I have understand development using
-            these technologies, allowing me to create robust and scalable
-            applications. My expertise lies in designing and implementing
-            efficient architectures, optimizing performance, and ensuring
-            seamless integration across the entire development process.
+            I focus on writing clean, maintainable code, optimizing app
+            performance, and creating seamless user experiences. I enjoy
+            collaborating with cross-functional teams to turn ideas into
+            reliable, production-ready products. I'm always open to new
+            opportunities where I can contribute, learn, and build impactful
+            digital solutions.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
+        {/* <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
             Throughout my career, I have consistently demonstrated my ability to
             build strong and collaborative relationships with various
@@ -62,7 +65,7 @@ export function About() {
             where I can apply my knowledge and experience to make a significant
             difference.
           </p>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <br />
         <ScrollAnimation animateIn="fadeInLeft" delay={400}>
           <div className="education">
@@ -77,15 +80,15 @@ export function About() {
           </div>
         </ScrollAnimation>
         <br />
-        {/* <ScrollAnimation animateIn="fadeInLeft" delay={550}>
+        <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
             <h2>Experience:</h2>
             <br />
             <h4>React Native Developer</h4>
-            <p>Global Software Consultancy - Present</p>
+            <p>Global Software Consultancy </p>
             <p>Lahore, Pakistan</p>
           </div>
-        </ScrollAnimation> */}
+        </ScrollAnimation>
         <br />
         <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
@@ -104,13 +107,13 @@ export function About() {
           </div>
         </ScrollAnimation>
         <br />
-        <ScrollAnimation animateIn="fadeInLeft" delay={550}>
+        {/* <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
             <h4>Associate React Native Developer</h4>
             <p>Prismatic Technologies </p>
             <p>Lahore, Pakistan</p>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
         <br />
         {/* <ScrollAnimation animateIn="fadeInLeft" delay={550}>
           <div className="experience">
@@ -146,6 +149,11 @@ export function About() {
             </ScrollAnimation>
           </div>
           <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
+              <img src={expo} alt="Expo" />
+            </ScrollAnimation>
+          </div>
+          <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.15 * 1000}>
               <img src={android} alt="Android" />
             </ScrollAnimation>
@@ -175,16 +183,16 @@ export function About() {
               <img src={cssIcon} alt="Css" />
             </ScrollAnimation>
           </div>
-          <div className="hability">
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
               <img src={boostrapIcon} alt="bootstrap" />
             </ScrollAnimation>
-          </div>
-          <div className="hability">
+          </div> */}
+          {/* <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={python} alt="python" />
             </ScrollAnimation>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="about-image">
